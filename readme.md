@@ -3,7 +3,7 @@
 + "localhost:3333/user/create" (any role)
 + "localhost:3333/user/login" (any role)
 + "localhost:3333/admin" (only admin can access)
-- Flow:
+- Features:
 + user create account with default role is "normal" (change this role directly on MongoDB cloud)
 + normal user can't access route "localhost:3333/admin"
 
