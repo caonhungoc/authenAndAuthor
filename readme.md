@@ -10,3 +10,6 @@
 - How to run this app:
 + go to the folder containing file index.js at top project.
 + run command "npm run devstart"
+
+- How to test:
+Can use postman to test these apis
