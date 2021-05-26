@@ -1,9 +1,11 @@
 const mongoose = require('mongoose');
-const mongoDB = 'mongodb+srv://ngoccao:Pass1234__@cluster0.lanpk.mongodb.net/testDB?retryWrites=true&w=majority';
+const config = require("config");
+// const mongoDB = 'mongodb+srv://ngoccao:Pass1234__@cluster0.lanpk.mongodb.net/testDB?retryWrites=true&w=majority';
+const mongoDB = config.get("dbUrl");
 
 function connectDB() {
     mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true}).then(() => {
-        console.log("connect database sucesss");
+        console.log("connect database sucesssfully");
     });
 }
 
